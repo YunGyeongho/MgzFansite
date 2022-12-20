@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+#indexLoginTable{
+	font-family: 'Galmuri9';
+	font-size: 15px;
+	background-color: #FFFDE7;
+	width: 500px;
+}
+
+#indexLoginTable input{
+	text-align: center;
+	font-family: 'Galmuri9';
+	border: none;
+	width: 150px;
+}
+
+#indexLoginTable button{
+	text-decoration: none;
+	font-family: 'Galmuri9';
+	border: none;
+	font-size: 15px;
+	background-color: #FFE57F;	
+	color: white;
+	border-radius: 20px;
+	width: 50px;
+	height: 35px;
+}
+
+#indexLoginTable div{
+	text-decoration: none;
+	background-color: #FFE57F;
+	color: white;
+	border-radius: 20px;
+	width: 50px;
+	height: 30px;
+	padding-top: 5px;
+}
+
+#indexLoginTable button:hover{
+	cursor: pointer;
+	color: #BDBDBD;
+}
+
+#indexLoginTable div:hover{
+	cursor: pointer;
+	color: #BDBDBD;
+}
+
+#indexLoginTable img{
+	max-width: 100px;
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+#chatTable{
+	margin-top: 20px;
+}
+
+.chatTd{
+	text-align: left;
+	width: 380px;
+	padding-left: 10px;
+	height: 30px;
+	font-size: 15px;
+	background-color: #FFF3E0;
+	border-radius: 5px;
+}
+
+#phoneCover{
+	height: 810px;
+	width: 420px;
+	position: fixed;
+	top: 100px;	
+	left: 600px;
+	border-radius: 10px;
+	background-color: orange;
+}
+
+#phoneMain{
+	height: 800px;
+	width: 400px;
+	position: fixed;
+	top: 100px;	
+	left: 600px;
+	border: solid 2px orange;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#chatDiv{
+	width: 400px; 
+	height: 360px;
+	border: solid 1px black;
+	border-radius: 7px;
+	overflow: scroll;
+}
+
+#inputDiv{
+	width: 400px;
+	height: 55px;
+}
+
+#inputDiv input{
+	width: 395px;
+	height: 50px;
+	border-radius: 2px;
+	border: solid 1px #FFCC80;
+	outline: none;
+	font-size: 20px;
+}
+
+#typingDiv{
+	width: 400px;
+}
+

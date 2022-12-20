@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ho.mgz.gallery.GalleryMapper">
+	<insert id="writeGallery" parameterType="com.ho.mgz.gallery.GalleryWriting">
+		insert into mgzGallery4 values(mgzGallery3_seq.nextval, #{ms_writer}, #{ms_title}, #{ms_txt}, sysdate, #{ms_color})
+	</insert>
+	<select id="setGalleryBoardCount" resultType="java.lang.Integer" parameterType="com.ho.mgz.gallery.SearchOption">
+		select count(*) from mgzGallery4 where ms_txt like '%'||#{search}||'%' or ms_title like '%'||#{search}||'%'
+	</select>
+	<insert id="regAIData" parameterType="com.ho.mgz.gallery.AIData">
+		insert into mgzGallery4_weather_color values(#{mwc_hour}, #{mwc_temp}, #{mwc_humidity}, #{mwc_weather}, #{mwc_color})
+	</insert>
+	<select id="getGallery" resultType="com.ho.mgz.gallery.GalleryWriting" parameterType="com.ho.mgz.gallery.SearchOption">
+		select * from (select rownum as rn, ms_no, m_photo, ms_writer, ms_title, ms_txt, ms_date, ms_color from (select rownum, ms_no, ms_writer, m_photo, ms_title, ms_txt, ms_date, ms_color from mgzmember2, mgzGallery4 where m_id = ms_writer and (ms_txt like '%'||#{search}||'%' or ms_title like '%'||#{search}||'%') order by ms_no desc)) where rn &gt;= #{start} and rn &lt;= #{end} 
+	</select>
+	<select id="showUpdateGallery" resultType="com.ho.mgz.gallery.GalleryWriting" parameterType="com.ho.mgz.gallery.GalleryWriting">
+		select * from mgzGallery4 where ms_no = #{ms_no}
+	</select>
+	<delete id="deleteGallery" parameterType="com.ho.mgz.gallery.GalleryWriting">
+		delete from mgzGallery4 where ms_no = #{ms_no}
+	</delete>
+	<update id="updateGallery" parameterType="com.ho.mgz.gallery.GalleryWriting">
+		update mgzGallery4 set ms_txt = #{ms_txt}, ms_title = #{ms_title}, ms_date = sysdate, ms_color = #{ms_color} where ms_no = #{ms_no} 
+	</update>
+	<select id="countUserGalleryBoard" resultType="java.lang.Integer" parameterType="com.ho.mgz.login.Member">
+		select count(*) from mgzGallery4 where ms_writer = #{m_id}
+	</select>
+	<insert id="writeGReply" parameterType="com.ho.mgz.gallery.GalleryReply">
+		insert into mgzGallery5_reply values(mgzGallery4_reply_seq.nextval, #{msr_m_photo}, #{msr_ms_no}, #{msr_writer}, #{msr_txt}, sysdate)
+	</insert>
+	<select id="showGReply" parameterType="com.ho.mgz.gallery.GalleryReply" resultType="com.ho.mgz.gallery.GalleryReply">
+		select * from mgzGallery5_reply where msr_ms_no = #{msr_ms_no}
+	</select>
+</mapper>

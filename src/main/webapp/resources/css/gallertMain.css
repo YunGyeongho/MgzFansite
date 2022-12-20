@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+@font-face{
+	font-family: "a";
+	src: url("Cafe24Dangdanghae.ttf");
+	
+}
+
+@font-face{
+	font-family: "b";
+	src: url("Cafe24SsurroundAir.ttf");
+}
+
+
+#galleryMainTable{
+	width: 1200px;
+	box-shadow: 3px 3px 3px #BDBDBD;
+}
+
+#galleryInputTable{
+	width:1200px;
+	height: 300px;
+	background-color: #21212120;
+	border-radius: 5px;
+	margin-top: 20px;
+	border-bottom: solid #BDBDBD 2px;
+	border-right: solid #BDBDBD 2px;
+}
+
+#gIFirstTable{
+	padding-top: 30px;	
+}
+
+#galleryInputTable input{
+	width: 90%;
+	outline: none;
+	text-align: center;
+	font-family: 'Galmuri9';
+}
+
+#galleryInputTable textarea{
+	width: 90%;
+	outline: none;
+	height: 150px;
+	text-align: center;
+	font-family: 'Galmuri9';
+	resize: none;
+}
+
+#galleryMainTable button, #galleryMainTable div{
+	border: none;
+	border-radius: 6px;
+	width: 60px;
+	height: 30px;
+	background-color: #FFD740;
+	font-family: "a";
+	font-size: 12px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#galleryMainTable div{
+	height: 15px;
+}
+
+#galleryMainTable div:hover, #galleryMainTable button:hover{
+	cursor: pointer;
+	color: #BDBDBD;
+}
+
+.galleryBoardTable{
+	width:1200px;
+	height: 200px;
+	border-bottom: solid #BDBDBD 2px;
+	border-right: solid #BDBDBD 2px;
+	border-radius: 10px;
+	border-spacing: 0px;
+}
+
+.galleryTextTd{
+	font-family: 'Galmuri9';
+	font-size: 12px;
+	width: 75%;
+}
+
+.galleryImgTd{
+	width: 15%;
+}
+
+.galleryImgTd img{
+	max-width: 90%;
+	border-radius: 10px;
+}
+
+.galleryBoardSecondTd{
+	height:15px;
+	font-size: 15px;
+	width: 500px;
+	font-family: 'Galmuri9';
+	border-top: #FFD740 solid 2px;
+}
+
+.galleryBoardTitleTd{
+	height:30px;
+	font-size: 18px;
+	font-family: 'Galmuri9';
+	font-weight: 5px;
+}
+
+#galleryMainTable a{
+	text-decoration: none;
+	font-family: "a";
+	color: black;
+	font-size: 20px;
+}
+
+#searchTd{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#searchTd input{
+	text-align: center;
+	outline: none;
+	border: none;
+	border-bottom: #212121 solid 1px;
+	width: 700px;
+	height: 40px;
+	font-size: 18px;
+	font-family: 'Galmuri9';
+}

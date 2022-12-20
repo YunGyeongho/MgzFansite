@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#myInfoTable{
+	font-size: 15px;
+	background-color: #FFFDE7;
+	width: 350px;
+	font-family: "a";
+}
+
+#myInfoTopTable{
+	width:95%;
+}
+
+#myInfoBottomTable{
+	width:95%;
+}
+
+#myInfoTopTable img{
+	max-width: 100px;
+}
+
+#myInfoTable div{
+	text-decoration: none;
+	background-color: #FFE57F;
+	color: white;
+	border-radius: 20px;
+	width: 60px;
+	height: 30px;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+#myInfoTable div:hover{
+	cursor: pointer;
+	color: #BDBDBD;
+}
+
+#blockTd{
+	word-break: break-all;
+}

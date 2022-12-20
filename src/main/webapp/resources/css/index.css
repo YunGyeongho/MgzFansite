@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+@font-face{
+	font-family: "a";
+	src: url("Cafe24Dangdanghae.ttf");
+	
+}
+
+@font-face{
+	font-family: "b";
+	src: url("Cafe24SsurroundAir.ttf");
+}
+
+#indexLoginTable {
+	margin-left: 1100px;
+	
+}
+
+#mgzLogo{
+	position: fixed;
+	top: 30px;
+	left: 50px;
+	width: 300px;
+	z-index: 3;
+}
+
+#mgzLogo img{
+	max-width: 290px;
+}
+
+#mainMenu{
+	position: fixed;
+	top: 30px;
+	right: 90px;
+	font-family: "a";
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
+}
+
+#mainMenu:hover{
+	cursor: pointer;
+	color: #424242;
+}
+
+#menuOpen{
+	position: fixed;
+	top: 30px;
+	right: 50px;
+	font-family: "a";
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
+	transform: rotate(0deg);
+	transform-origin: center center;
+	opacity: 1;
+	transition: all 0.5s ease-out;
+}
+
+#menuClose{
+	position: fixed;
+	top: 28px;
+	right: 50px;
+	font-family: "a";
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
+	transform: rotate(0deg);
+	transform-origin: center center;
+	opacity: 0;
+	transition: all 0.5s ease-out;
+}
+
+#loginButton{
+	position: fixed;
+	top: 20px;
+	right: 400px;	
+	width: 60px;
+	height: 40px;
+	background-color: #FFE57F;
+	font-family: 'Galmuri9';
+	color: white;
+	border-radius: 20px;
+	transition: all 0.5s ease-in;
+	z-index: 3;
+}
+
+#loginButton:hover{
+	color: #BDBDBD;
+}
+
+#menuMainTable{
+	width: 2000px;
+	height: 700px;
+	border-bottom: solid 2px;
+	padding-bottom: 0px;
+	border-spacing: 0px;
+	top: -700px;
+	left: 0px;
+	position: fixed;
+	transition: all 0.5s ease-in;
+	background-color: white;
+}
+
+#menuLeftTable{
+	width: 1000px;
+	font-family: "a";
+}
+
+#menuRightTable{
+	width: 450px;
+	padding-top: 250px;
+}
+
+#menuListTable{
+	margin-top: 100px;
+	font-size: 40px;
+}
+
+#menuListTable td{
+	padding-bottom: 50px;
+}
+
+#moveText{
+	font-family: "a";
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+#menuRightTd{
+	border-left: solid 2px;
+	height: 100%;
+}
+
+#menuLeftTable a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#menuLeftTable a:hover{
+	cursor: pointer;
+	color: #BDBDBD;
+}
+
+#menuListTable td:hover{
+	cursor: pointer;
+	color: #BDBDBD;
+}
+
+
+#myInfoTable, #indexLoginTable, #loginPage{
+	position: fixed;
+	right: 300px;
+	z-index: 3;
+}
+
+#indexLoginTable, #loginPage{
+	top: -100px;
+	transition: all 0.5s ease-out;
+}
+
+#myInfoTable{
+	transition: all 0.5s ease-out;
+	top: -320px;
+}
+
+#contentMainPage{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+

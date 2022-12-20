@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+::-webkit-scrollbar{
+	display: none;
+}
+#mainTable input{
+	width: 400px;
+	height: 30px;
+	font-size: 20px;
+	font-family: 'Galmuri9';
+}
+
+#mainTable{
+	font-family: 'Galmuri9';
+	
+}
+
+#scrollDiv{
+	width: 1000px;
+	height: 500px;
+	overflow: scroll;
+	box-shadow: 2px 2px 2px #212121;
+}
+
+#shopInfoTable{
+	width: 1000px;
+	
+	border-spacing: 0px;
+}
+
+.placeName{
+	width: 100%;
+	border-bottom: 1px solid #FFCCBC;
+	border-top: 1px solid #FFCCBC;
+	
+}
+
+.infoTd{
+	height: 50px;
+	background-color: #FAFAFA;
+}
+
+.infoTd:hover{
+	cursor: pointer;
+	background-color: #EEEEEE;	
+}
+
+.phoneTd{
+	height: 50px;
+	background-color: #FAFAFA;
+}
+
+

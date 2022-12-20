@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ho.mgz.MgzMapper">
+	<insert id="join" parameterType="com.ho.mgz.login.Member">
+		insert into mgzMember2 values(#{m_photo}, #{m_id}, #{m_pw}, #{m_nickname}, #{m_birthday}, #{m_block}, #{m_addr})
+	</insert>
+	<select id="getMemberByID" resultType="com.ho.mgz.login.Member" parameterType="com.ho.mgz.login.Member">
+		select * from MGZMEMBER2 where m_id = #{m_id}
+	</select>
+	<delete id="deleteAcount" parameterType="com.ho.mgz.login.Member">
+		delete from mgzMember2 where m_id = #{m_id}
+	</delete>
+	<update id="updateMyInfo" parameterType="com.ho.mgz.login.Member">
+		update mgzMember2 set m_photo = #{m_photo}, m_pw = #{m_pw}, m_nickname = #{m_nickname}, m_addr = #{m_addr} where m_id = #{m_id}
+	</update>
+	<select id="getMemberByIDList" resultType="com.ho.mgz.login.Member" parameterType="com.ho.mgz.login.Member">
+		select m_id from MGZMEMBER2 where m_id = #{m_id}
+	</select>
+</mapper>
